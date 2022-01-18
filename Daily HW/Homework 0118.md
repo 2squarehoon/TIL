@@ -5,14 +5,14 @@
 ### 1. Mutable & Immutable
 
 ``` python
-mutable_container = ['String', 'list', 'set', 'Dictionary']
-immutable_container = ['tuple', 'range']
+mutable_container = ['list', 'set', 'Dictionary']
+immutable_container = ['String', 'tuple', 'range']
 ```
 
 ### 2. 홀수만 담기
 
 ``` python
-list(range(51)[1::2])
+odd_num = list(range(51)[1::2])
 ```
 
 ### 3. Dictionary 만들기

@@ -48,6 +48,8 @@ math.isclose(num1, num2)
 ``` python
 name = '철수'
 print('안녕, %s야' % name)
+print('안녕, {}야'.format(name))
+print(f"'안녕, {name}야'")
 ```
 
 ### 5. 형 변환
@@ -65,9 +67,11 @@ int('3.5') #오류 발생, integer는 정수값인데 3.5인 실수가 있어서
 ``` python
 n = 5
 m = 9
-
 line = '*' * n
-print('%s\n' %line*9)
+print('%s\n' %line*m)
+
+# or
+print(('*' * n + '\n') * m) # 더하기를 붙이자
 ```
 
 ### 7. 이스케이프 시퀀스 응용
@@ -83,10 +87,8 @@ a = float(input('a값을 입력하세요. : '))
 b = float(input('b값을 입력하세요. : '))
 c = float(input('c값을 입력하세요. : '))
 
-alpha = 0
-beta = 0
-root1 = (-b+(b*b-4*a*c)**0.5)/(2*a) 
-root2 = (-b-(b*b-4*a*c)**0.5)/(2*a)
+root1 = (-b + (b**2 - 4*a*c)**0.5)/(2*a) 
+root2 = (-b - (b**2 - 4*a*c)**0.5)/(2*a)
 print(root1, root2)
 ```
 
@@ -119,8 +121,8 @@ for i in range(number+1):
 ``` python
 number = int(input('자연수 n을 입력하시오. : '))
 total_num = 0
-for i in range(number+1):
-    total_num += i
+for i in range(number):
+    total_num += i+1
     
 print(total_num)
 ```
