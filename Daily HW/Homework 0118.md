@@ -73,12 +73,17 @@ else:
 ``` python
 numbers = [85, 72, 38, 80, 69, 65, 68, 96, 22, 49, 67, 51, 61, 63, 87, 66, 24, 80, 83, 71, 60, 64, 52, 90, 60, 49, 31, 23, 99, 94, 11, 25, 24]
 
-
+print(sorted(numbers)[len(numbers)//2])
 ```
 
 ### 3. 계단 만들기
 
 ``` python
+number = int(input('자연수를 입력하시오 : '))
 
+for n in range(1,number+1):
+    print ('')
+    for m in range(1, n+1):
+        print(m, end = ' ')
 ```
 
