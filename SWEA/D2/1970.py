@@ -10,4 +10,5 @@ for test_case in range(1, T+1):
     for x in currency:
         cnt.append(N//x)
         N = N%x
+    print(f'#{test_case}')
     print(*cnt)
