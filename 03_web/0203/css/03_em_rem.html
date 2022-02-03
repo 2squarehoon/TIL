@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .em {
+      font-size: 1.5em;
+    }
+
+    .rem {
+      font-size: 1.5rem;
+    }
+    .vw{
+      width: 50vw;
+      height: 50vh;
+      border: 1px solid red;
+      background-color: yellow
+    }
+  </style>
+</head>
+<body>
+  <!-- ul => 24px -->
+  <ul class="em">
+    <!-- 부모(ul)대비 1.5배 => 36-->
+    <li class="em">1.5em</li>
+    <!-- root 대비 1.5배 => 16*1.5 => 24-->
+    <li class="rem">1.5rem</li>
+    <li>no class</li>
+  </ul>
+  <div class="vw">
+
+  </div>
+</body>
+</html>
