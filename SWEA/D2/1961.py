@@ -5,12 +5,7 @@
 T = int(input())
 for test_case in range(1, T+1):
     N = int(input())
-    line = [0] * N
-    arr = []
-    for idx in range(N):
-        arr.append(line)
-    for i in range(N):
-        arr[i] = list(map(int, input().split())) #인풋 받아 array 생성
+    arr = [list(map(int, input().split())) for _ in range(N)]
     print(f'#{test_case}')
     for j in range(N):
         str1 = ''
